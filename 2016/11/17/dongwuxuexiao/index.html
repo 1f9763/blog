@@ -1,51 +1,5 @@
-extends base
-
-block title
-  title= page.title + ' | ' + config.title
-
-block content
-  .post
-    h1.post-title= page.title
-    .post-meta= page.date.format('ll')
-      if page.categories.length > 0
-        span= ' | '
-        span.category
-          for category in page.categories.toArray()
-            a(href=url_for(category.path))= category.name
-      if theme.busuanzi == true
-        script(src='https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js', async)
-        span#busuanzi_container_page_pv= ' | '
-          span#busuanzi_value_page_pv
-          span= ' ' + __('Hits')
-    if theme.duoshuo
-      a.ds-thread-count(data-thread-key=page.path, href=url_for(page.path) + '#comments')
-    if theme.disqus
-      a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
-    if page.toc
-      div(class='clear')
-        div(id='toc' class='toc-article')
-          div(class='toc-title')= __('contents')
-          != toc(page.content)
-    .post-content
-      != page.content
-    if theme.shareto == true
-      script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version, async)
-      a.article-share-link(data-url='#{page.permalink}', data-id='#{page._id}')= __('shareto')
-    include _partial/tag
-    include _partial/post_nav
-    if theme.duoshuo
-      div(class='ds-share flat' data-thread-key=page.path, data-title=page.title, data-url=page.permalink)
-         .ds-share-inline
-            ul.ds-share-icons-16
-              li(data-toggle='ds-share-icons-more')
-                a(class='ds-more' href='javascript:void(0);') 分享到：
-              li
-                a(class='ds-weibo' href='javascript:void(0);' data-service='weibo') 微博
-              li
-                a(class='ds-qzone' href='javascript:void(0);' data-service='qzone') QQ空间
-              li
-                a(class='ds-qqt' href='javascript:void(0);' data-service='qqt') 腾讯微博
-              li
-                a(class='ds-wechat' href='javascript:void(0);' data-service='wechat') 微信
-            .ds-share-icons-more
-    include _partial/comments
+<!DOCTYPE html><html lang="null"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="三人行 必有我师"><title>动物学校 | dakara</title><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/5.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">动物学校</h1><a id="logo" href="/.">dakara</a><p class="description">读书 编程 自律 心智成熟</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> Start</i></a><a href="/archives/"><i class="fa fa-archive"> Archiv</i></a><a href="/about/"><i class="fa fa-user"> Über</i></a><a href="/atom.xml"><i class="fa fa-rss"> RSS</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">动物学校</h1><div class="post-meta">Nov 17, 2016<script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><div class="post-content"><p>很久很久以前，动物们决定创办一所学校以应对日益变化的世界的需要。在这所学校里，教授一组由跑、跳、爬、游泳、飞行等科目组成的活动课程。为了便于管理，所有的动物学习所有的科目。<br>第一批学员有鸭子、兔子、松鼠、鹰以及泥鳅。</p>
+<a id="more"></a>
+<p>鸭子在游泳这门课上的表现相当突出，甚至比他的老师还要好，可飞行课只能勉强及格，而对于跑则感到非常吃力。由于跑得慢，他不得不每天放学后仍留在学校里，放弃心爱的游泳以腾出时间练习跑步。他不停地练呀练，脚掌都磨破了，终于获得了勉强及格的成绩。而他的游泳科目，由于长期得不到练习，期末时只获得了中等的成绩。学校对中等成绩是能接受的。所以除了鸭子本人以外没有人在乎这一点。<br>兔子刚一开学时是班里跑得最快的，由于在游泳科目中有太多的作业要做，结果精神都快崩溃了。<br>松鼠的成绩一向是班里最出色的，但他对飞行感到非常沮丧，因为他的老师只许他从地面上起飞，而不允许从树顶上起飞。由于他非常喜欢跳跃，并花了很多时间致力于发明一种跳跃的游戏，结果期末时爬行只得了一个C，跑只得了一个D。<br>鹰由于活泼爱动受到老师们的严格管制，在爬行课上的一次测验中，他战胜了所有的同学，第一个到达了树的顶端，但他用的是自己的方式而不是老师所教的那种方式，因此他并没有得到老师的表扬。</p>
+<p>学期结束公布成绩，普普通通的泥鳅同学，由于游泳还马马虎虎，跑、爬、跳的成绩一般，也能飞一点，因此他的成绩是班里最高的。毕业典礼那天，他作为全体学员的唯一代表在大会上发了言。</p>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="maida.me/2016/11/17/dongwuxuexiao/" data-id="ciw1ll1uq0001lslsd3tx5aik" class="article-share-link">Aktie</a><div class="tags"><a href="/tags/story/">story</a></div><div class="post-nav"><a href="/2016/11/17/leguandehaizi/" class="pre">教出乐观的孩子</a><a href="/2016/11/17/101/" class="next">one</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="maida.me"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Kategorien</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"><a href="/tags/quote/" style="font-size: 15px;">quote</a> <a href="/tags/story/" style="font-size: 15px;">story</a> <a href="/tags/poem/" style="font-size: 15px;">poem</a> <a href="/tags/book/" style="font-size: 15px;">book</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Letzte</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/11/24/test/">top time</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/24/你的心/">你的心</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/21/杜鹃/">杜鹃</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/18/心目中的管理者/">心目中的管理者</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/17/jiuyue/">九月</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/17/youtu/">tps</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/17/leguandehaizi/">教出乐观的孩子</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/17/dongwuxuexiao/">动物学校</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/17/101/">one</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Blogroll</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">dakara.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
