@@ -515,8 +515,8 @@ i {
 body, button, input, select, textarea {
   color: #1a1a1a;
   font-family: lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 15px;
+  /*font-size: 1rem;*/
   line-height: 1.75
 }
 
@@ -543,7 +543,7 @@ body {
   position: absolute;
   right: 0;
   min-height: 100%;
-  background: #eaeaea;
+  background: #e0e0e0;
   left: 250px;
   width: auto
 }
@@ -1046,7 +1046,7 @@ pre .css ~ * .id, pre .id {
 }
 
 .article-tag, .article-tag-list .article-tag-list-item, .article-tag .article-tag-list {
-  float: left
+  float: right
 }
 
 .article-tag .icon-price-tags {
@@ -1088,14 +1088,15 @@ pre .css ~ * .id, pre .id {
 }
 
 .archive-article-date {
-  float: left;
+  float: right;
   color: #999;
-  margin-right: 20px
+  margin-right: 20px;
+  margin-top: 5px
 }
 
 .archive-article-date .icon-clock {
   float: left;
-  margin: 5px
+  margin: 3px
 }
 
 .glass {
@@ -1813,7 +1814,7 @@ body.archive-inner .archive-article-date .icon-clock {
   color: white;
   margin-left: 0;
   font-weight: 250;
-  line-height: 35px;
+  line-height: 27px;
   margin-bottom: 20px;
   font-size: 19px;
   -webkit-transition: color .3s;
@@ -1822,7 +1823,7 @@ body.archive-inner .archive-article-date .icon-clock {
 }
 
 .article-header {
-  height: border-left: 5px solid #4d4d4d;
+  border-left: 5px solid #4d4d4d;
   padding: 0px 0px 25px;
   background-color: #1f9763;
   padding-left: 3%;
@@ -1855,7 +1856,7 @@ body.archive-inner .archive-article-date .icon-clock {
 }
 
 .article-more-link a {
-  background: #4d4d4d;
+  background: #e0e0e0;
   color: #fff;
   font-size: 12px;
   padding: 2px 8px 4px;
@@ -1882,7 +1883,8 @@ body.archive-inner .archive-article-date .icon-clock {
   padding-top: 2px;
   margin: 30px 7.6923% 0;
   min-height: 42px;
-  border-top: 1px solid #ddd
+  border-top: 1px solid #ddd;
+  font-size: 12px;
 }
 
 .article-info-post.article-info {
@@ -1892,7 +1894,7 @@ body.archive-inner .archive-article-date .icon-clock {
 }
 
 .article-inner p {
-  margin: 0 0 1.75em
+  margin: 0 0 15px
 }
 
 .article-inner {
@@ -1955,7 +1957,8 @@ body.archive-inner .archive-article-date .icon-clock {
 .article-entry {
   line-height: 1.8em;
   padding-right: 7.6923%;
-  padding-left: 7.6923%
+  padding-left: 7.6923%;
+  margin-top: 30px;
 }
 
 .article-entry p {
@@ -2085,7 +2088,7 @@ body.archive-inner .archive-article-date .icon-clock {
 
 .article-entry table tbody tr:hover {
   /*background: #1f9763;*/
-  color: #1f9763;
+  /*color: #1f9763;*/
 }
 
 .article-entry table td, .article-entry table th {
@@ -2241,7 +2244,8 @@ body.archive-inner .archive-article-date .icon-clock {
   .article-info-index.article-info {
     padding-top: 10px;
     margin: 0;
-    border-top: 1px solid #ddd
+    border-top: 1px solid #ddd;
+    font-size: 12px;
   }
 
   .article-info-post.article-info {
@@ -2412,7 +2416,7 @@ body.archive-inner .archive-article-date .icon-clock {
   }
 
   .archives-wrap .article-meta .article-tag-list-link {
-    font-size: 12px
+    font-size: 10px
   }
 
   .archives .archive-article {
