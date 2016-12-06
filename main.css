@@ -277,7 +277,7 @@ i {
 }
 
 * {
-  box-sizing: border-box
+  /*box-sizing: border-box*/
 }
 
 @font-face {
@@ -1826,7 +1826,7 @@ body.archive-inner .archive-article-date .icon-clock {
   padding: 0px 0px 25px;
   background-color: #1f9763;
   padding-left: 3%;
-  height: 25px;
+  height: 5px;
 }
 
 .article-meta {
@@ -2084,8 +2084,8 @@ body.archive-inner .archive-article-date .icon-clock {
 }
 
 .article-entry table tbody tr:hover {
-  background: #1f9763;
-  color: #FFFFFF;
+  /*background: #1f9763;*/
+  color: #1f9763;
 }
 
 .article-entry table td, .article-entry table th {
