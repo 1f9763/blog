@@ -1823,6 +1823,26 @@ body.archive-inner .archive-article-date .icon-clock {
   vertical-align: top;
   border-bottom: 1px solid black;
 }
+/* add by pb */
+ .article-title:hover{
+  color: #1f9763;
+  border-bottom: 1px solid #1f9763;
+  /*background: #1f9763;*/
+  animation: pulse 1s ease infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 
 .article-header {
   border-left: 0px solid #4d4d4d;
