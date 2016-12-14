@@ -543,7 +543,7 @@ body {
   position: absolute;
   right: 0;
   min-height: 100%;
-  background: #e0e0e0;
+  background: #fff;
   left: 250px;
   width: auto
 }
@@ -604,13 +604,14 @@ body {
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
   height: 100%;
-  z-index: 999
+  z-index: 999;
+  border-right:1px solid #ddd;
 }
 
 .left-col .overlay {
   width: 100%;
   height: 180px;
-  background-color: #1f9763;
+  background-color: #fff;
   position: absolute;
   opacity: 1
 }
@@ -1800,7 +1801,7 @@ body.archive-inner .archive-article-date .icon-clock {
 .article {
   margin: 30px;
   position: relative;
-  border: 1px solid #ddd;
+  border-bottom: 0px solid #ddd;
   background: #fff;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in
@@ -1811,7 +1812,7 @@ body.archive-inner .archive-article-date .icon-clock {
 }
 
 .article-inner h1.article-title, .article-title {
-  color: white;
+  color: black;
   margin-left: 0;
   font-weight: 250;
   line-height: 27px;
@@ -1820,12 +1821,13 @@ body.archive-inner .archive-article-date .icon-clock {
   -webkit-transition: color .3s;
   transition: color .3s;
   vertical-align: top;
+  border-bottom: 1px solid black;
 }
 
 .article-header {
-  border-left: 5px solid #4d4d4d;
+  border-left: 0px solid #4d4d4d;
   padding: 0px 0px 25px;
-  background-color: #1f9763;
+  background-color: #fff;
   padding-left: 3%;
   height: 5px;
 }
@@ -1883,7 +1885,7 @@ body.archive-inner .archive-article-date .icon-clock {
   padding-top: 2px;
   margin: 30px 7.6923% 0;
   min-height: 42px;
-  border-top: 1px solid #ddd;
+  border-top: 0px solid #ddd;
   font-size: 12px;
 }
 
@@ -2087,8 +2089,8 @@ body.archive-inner .archive-article-date .icon-clock {
 }
 
 .article-entry table tbody tr:hover {
-  /*background: #1f9763;*/
-  /*color: #1f9763;*/
+  /*background: #fff;*/
+  /*color: #fff;*/
 }
 
 .article-entry table td, .article-entry table th {
@@ -2262,7 +2264,8 @@ body.archive-inner .archive-article-date .icon-clock {
     padding: 10px;
     margin: 10px;
     font-size: 16px;
-    color: #555
+    color: #555;
+    border-bottom:1px solid #ddd;
   }
 
   .article .article-entry {
