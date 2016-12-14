@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="maida.me">
+  <title>Airbnb的设计原则：为信任而设计 | dakara</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Airbnb的Co-founder Joe Gebbia在一次Ted演讲上让全场的听众将他们自己的手机解锁并与左边的陌生人交换，手机交换之后产生的恐惧正与Airbnb的房东与房客之间产生的恐惧相类似，既“陌生人＝危险”。如何打破这个根生蒂固的固化思维是Airbnb最大的一个挑战。因此建立一套信用机制是Airbnb的重中之重。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Airbnb的设计原则：为信任而设计">
+<meta property="og:url" content="maida.me/2016/12/14/Airbnb的设计原则：为信任而设计/index.html">
+<meta property="og:site_name" content="dakara">
+<meta property="og:description" content="Airbnb的Co-founder Joe Gebbia在一次Ted演讲上让全场的听众将他们自己的手机解锁并与左边的陌生人交换，手机交换之后产生的恐惧正与Airbnb的房东与房客之间产生的恐惧相类似，既“陌生人＝危险”。如何打破这个根生蒂固的固化思维是Airbnb最大的一个挑战。因此建立一套信用机制是Airbnb的重中之重。">
+<meta property="og:image" content="maida.me/img/other/airbnb.png">
+<meta property="og:image" content="maida.me/img/other/airbnb1.png">
+<meta property="og:image" content="maida.me/img/other/airbnb2.png">
+<meta property="og:image" content="maida.me/img/other/airbnb3.png">
+<meta property="og:image" content="maida.me/img/other/airbnb4.png">
+<meta property="og:image" content="maida.me/img/other/airbnb5.png">
+<meta property="og:image" content="maida.me/img/other/airbnb6.png">
+<meta property="og:updated_time" content="2016-12-14T02:36:34.917Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Airbnb的设计原则：为信任而设计">
+<meta name="twitter:description" content="Airbnb的Co-founder Joe Gebbia在一次Ted演讲上让全场的听众将他们自己的手机解锁并与左边的陌生人交换，手机交换之后产生的恐惧正与Airbnb的房东与房客之间产生的恐惧相类似，既“陌生人＝危险”。如何打破这个根生蒂固的固化思维是Airbnb最大的一个挑战。因此建立一套信用机制是Airbnb的重中之重。">
+<meta name="twitter:image" content="maida.me/img/other/airbnb.png">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/main.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="/img/pb.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Nick Pang</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">读书 编程 自律 心智成熟</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="https://github.com/1f9763" title="github">github</a>
+		        
+					<a class="rss" target="_blank" href="http://www.jianshu.com/users/d91539be677c" title="rss">rss</a>
+		        
+					<a class="douban" target="_blank" href="https://www.douban.com/people/75364739/" title="douban">douban</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">Nick Pang</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="/img/pb.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Nick Pang</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">读书 编程 自律 心智成熟</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/1f9763" title="github">github</a>
+			        
+						<a class="rss" target="_blank" href="http://www.jianshu.com/users/d91539be677c" title="rss">rss</a>
+			        
+						<a class="douban" target="_blank" href="https://www.douban.com/people/75364739/" title="douban">douban</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-Airbnb的设计原则：为信任而设计" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Airbnb的设计原则：为信任而设计
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/img/other/airbnb.png"></p>
+<p>Airbnb的Co-founder Joe Gebbia在一次Ted演讲上让全场的听众将他们自己的手机解锁并与左边的陌生人交换，手机交换之后产生的恐惧正与Airbnb的房东与房客之间产生的恐惧相类似，既“陌生人＝危险”。如何打破这个根生蒂固的固化思维是Airbnb最大的一个挑战。因此建立一套信用机制是Airbnb的重中之重。<br><a id="more"></a></p>
+<h2 id="房客对房主的信任"><a href="#房客对房主的信任" class="headerlink" title="房客对房主的信任"></a>房客对房主的信任</h2><p>Joe与Stanford一起做了一项研究，研究表明人们更容易信任跟他们更相似的人，比如相似的地域，年龄，背景，所在地等。与他们越不相同，就越不容易被信任，这是存在于我们日常生活中很普遍的一种社交偏见。当评价数量在3个以内时，人们倾向于相信那么与自己“类似”的人们；当评价数量超过3个时，人们的信任度就会大大的增加，并且胜过那些“相似”的因素。<br><img src="/img/other/airbnb1.png"><br><img src="/img/other/airbnb2.png"><br><img src="/img/other/airbnb3.png"></p>
+<center>房东页面</center>
+
+<p>据Airbnb统计，50%的旅行中，房客至少会访问房东的profile一次，68%的房客会在预定之前就先了解下房东的情况。对比非首次入住的房客，首次入住的房客会超出其20％的人数去在预定之前提前看房东的profile。因此，房东profile是必填内容。</p>
+<h2 id="房东对房东的信任"><a href="#房东对房东的信任" class="headerlink" title="房东对房东的信任"></a>房东对房东的信任</h2><p>下图中哪一位访客的profile会更受房主的欢迎？当然是右边的。为了尽量达到右边的详尽的描述，Airbnb利用控制输入框的大小来引导房客正确的介绍自己。这个时候，房客与房东的沟通已经开始了。</p>
+<p><img src="/img/other/airbnb4.png"></p>
+<center>两位访客的profile页面</center>
+
+<p><img src="/img/other/airbnb5.png"></p>
+<center>房客的profile输入页面</center>
+
+<h2 id="房客与房东间的互相信任"><a href="#房客与房东间的互相信任" class="headerlink" title=" 房客与房东间的互相信任"></a> 房客与房东间的互相信任</h2><p>Airbnb内部的即时通讯工具也可以增加双方的信任，从房东认真的开始回答房客的第一条问题的时候，信任就开始慢慢的产生了。提供这种特殊的“相见”的方式是建立信任的一个至关重要的机会。</p>
+<p>为了建立高效的沟通，Airbnb为房东设计了一套可以事先定义好答案的功能。当房东遇到类似的问题，就可以快速的选择事先定义好的答案，或者稍加编辑。比如，房东需要经常回答司机或者房客关于寻找住宿位置的问题。</p>
+<p><img src="/img/other/airbnb6.png"></p>
+<center>房东的回答系统</center>
+
+<h2 id="大家对Airbnb的信任"><a href="#大家对Airbnb的信任" class="headerlink" title="大家对Airbnb的信任"></a>大家对Airbnb的信任</h2><p>Airbnb尝试着建立一个真实的评价系统。由于评价是来自双方的，因此房东与房客非常担心如果他们留下了包括负面的真实的评价，那么另外一方就会因此也给自己一个负面的评价。为了解决这个问题，Airbnb允许只有当双方都完成了评价之后才会同时显示出来。</p>
+<p>为了让用户给出“新鲜”的评论，90％的用户会在14天之内留下评论（Airbnb只允许14天之内留下评价）。为了隐私，系统还允许房客给房东“私信”评价，可以留下一个正面的与可以改进的建议。</p>
+<p>信任在付款的过程中也占有很大的比重。为了让房客觉得自己是被平台所保护的，Airbnb会在房客住处24小时之后才会“放款”给房东。</p>
+<p>Airbnb还专门有一个页面从各个角度诠释了他们为信任所作出的努力。</p>
+<p>总结</p>
+<p>信任做为一条重要的设计原则被很多公司所忽视，Airbnb给大家很好的示范了如何通过设计去解决这一问题，更是解决了商业的问题。</p>
+<p class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/16cM-RFid9U" frameborder="0" allowfullscreen></iframe></p>
+
+
+
+
+
+<blockquote>
+<p>Article from :unicat，微信公众号【WOW7DUX】，毕业于清华与美国伊利诺伊理工，现工作于Booking.com的移动端设计师<br>感谢他= =</p>
+</blockquote>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/12/14/Airbnb的设计原则：为信任而设计/" class="archive-article-date">
+  	<time datetime="2016-12-14T02:12:53.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-12-14</time>
+</a>
+      
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2016/12/07/当你老了/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">当你老了</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Airbnb的设计原则：为信任而设计" data-title="Airbnb的设计原则：为信任而设计" data-url="maida.me/2016/12/14/Airbnb的设计原则：为信任而设计/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"dakara"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Nick Pang
+    	</div>
+       
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: false
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+
+  <ul class="btn-wrap">
+    
+    
+    
+    
+  </ul>
+
+  <div class="tools-wrap">
+    
+
+    
+
+    
+
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
